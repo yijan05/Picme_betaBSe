@@ -49,7 +49,7 @@
 /* LAYOUT PRINCIPAL */
 body {
     margin: 0;
-    background: #e3dede;
+    background: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 .contenedor-logo img {
-    width: 200px;
+    width: 400px;
     max-width: 800px;
     cursor: pointer;
     transition: 0.5s ease;
