@@ -81,7 +81,7 @@ body {
 
 .logo-ubate img {
     width: 100%;
-    max-width: 490px;
+    max-width: 600px;
     border-radius: 35px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -113,7 +113,7 @@ body {
 
 .contenedor-logo img {
     width: 200px;
-    max-width: 400px;
+    max-width: 800px;
     cursor: pointer;
     transition: 0.5s ease;
 }
@@ -164,7 +164,7 @@ h1 {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .contenedor-principal {
         flex-direction: column;
     }
@@ -194,7 +194,7 @@ h1 {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     #btn-comenzar {
         font-size: 24px;
         padding: 10px 20px;
