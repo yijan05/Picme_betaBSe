@@ -1,10 +1,12 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-
-h1 {
-    font-family: 'trebuchet ms', sans-serif';
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+/* LOADING SCREEN */
 #loading-screen {
     position: fixed;
     inset: 0;
@@ -28,8 +30,8 @@ h1 {
 
 #btn-comenzar {
     padding: 16px 32px;
-    font-size: 40px;
-    border:grey solid 2px;
+    font-size: 80px;
+    border: grey solid 2px;
     border-radius: 10px;
     background: rgba(92, 233, 85, 0.2);
     color: white;
@@ -43,35 +45,63 @@ h1 {
     transform: translateY(-3px);
 }
 
-/* Menú principal */
-#menu-principal {
-    display: flex;
-    text-align: center;
-    margin-top: 10%;
-    color: white;
-}
-
+/* BODY */
 body {
     margin: 0;
     background: #e3dede;
-    font-family: 'trebuchet ms', sans-serif';
-
 }
 
-/* Botones del menú */
+/* MENÚ PRINCIPAL (todo centrado en columna) */
+#menu-principal {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 4rem;
+    gap: 3rem;
+    color: black;
+}
+
+/* LOGO CENTRADO */
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logo img {
+    width: 200px;
+    max-width: 250px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.contenedor-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* BOTONES CENTRADOS ABAJO */
+.contenido-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* BOTONES */
 .menu-btn {
-    padding: 15px 40px;
-    margin: 20px;
-    background: #56e472;
-    border: grey soild 2px;
+    padding: 30px 55px;
+    background: #1dc73f;
+    border: grey solid 5px;
     border-radius: 10px;
-    font-size:40px;
+    font-size: 80px;
     color: white;
     cursor: pointer;
-    transition: .s;
+    transition: .5s;
 }
 
 .menu-btn:hover {
-    background: #042f06;
+    background: #16981c;
     transform: scale(1.05);
 }

@@ -6,6 +6,7 @@
     <title>Reconocimiento Facial</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- PANTALLA DE CARGA CON VIDEO -->
@@ -19,27 +20,36 @@
         </button>
     </div>
 
-    <!-- MENÚ PRINCIPAL OCULTO AL INICIO -->
+    <!-- MENÚ PRINCIPAL -->
     <div id="menu-principal">
+
         <h1>Reconocimiento Facial</h1>
 
-        <button class="menu-btn" onclick="iniciarSesion()">
-            Iniciar sesión
-        </button>
+        <!-- LOGO CENTRADO -->
+        <div class="contenedor-logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
 
-        <button class="menu-btn" onclick="registrarUsuario()">
-            Registrar usuario
-        </button>
+        <!-- BOTONES CENTRADOS -->
+        <div class="contenido-botones">
+            <button class="menu-btn" onclick="iniciarSesion()">
+                Iniciar sesión
+            </button>
+
+            <button class="menu-btn" onclick="registrarUsuario()">
+                Registrar usuario
+            </button>
+        </div>
+
     </div>
 
     <script>
         function mostrarMenu() {
             document.getElementById("loading-screen").style.display = "none";
-            document.getElementById("menu-principal").style.display = "block";
+            document.getElementById("menu-principal").style.display = "flex";
         }
 
         function iniciarSesion() {
-            // Por ahora solo abre el archivo .py (necesita launcher)
             window.location.href = "malla y B_D.py";
         }
 
