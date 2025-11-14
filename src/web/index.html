@@ -20,33 +20,43 @@
         </button>
     </div>
 
-    <!-- MENÚ PRINCIPAL -->
-    <div id="menu-principal">
-
-        <h1>Reconocimiento Facial</h1>
-
-        <!-- LOGO CENTRADO -->
-        <div class="contenedor-logo">
-            <img src="Logo.png" alt="Logo">
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor-principal" style="display: none;">
+        
+        <!-- PANEL IZQUIERDO CON UBATÉ -->
+        <div class="panel-izquierdo">
+            <div class="logo-ubate">
+                <h2 class="titulo-ubate">Universidad De Cundinamarca</h2>
+                <img src="ubate.jpg" alt="Ubaté">
+            </div>
         </div>
+        
+        <!-- PANEL DERECHO CON CONTENIDO -->
+        <div class="panel-derecho">
+            <h1>Reconocimiento Facial</h1>
 
-        <!-- BOTONES CENTRADOS -->
-        <div class="contenido-botones">
-            <button class="menu-btn" onclick="iniciarSesion()">
-                Iniciar sesión
-            </button>
+            <!-- LOGO PRINCIPAL CENTRADO -->
+            <div class="contenedor-logo">
+                <img src="logo u.jpg" alt="Logo Principal">
+            </div>
 
-            <button class="menu-btn" onclick="registrarUsuario()">
-                Registrar usuario
-            </button>
+            <!-- BOTONES CENTRADOS -->
+            <div class="contenido-botones">
+                <button class="menu-btn" onclick="iniciarSesion()">
+                    Iniciar sesión
+                </button>
+
+                <button class="menu-btn" onclick="registrarUsuario()">
+                    Registrar usuario
+                </button>
+            </div>
         </div>
-
     </div>
 
     <script>
         function mostrarMenu() {
             document.getElementById("loading-screen").style.display = "none";
-            document.getElementById("menu-principal").style.display = "flex";
+            document.querySelector(".contenedor-principal").style.display = "flex";
         }
 
         function iniciarSesion() {
